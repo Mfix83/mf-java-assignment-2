@@ -8,7 +8,7 @@ public class JavaAssignment2 {
 	public static void main(String[] args) {
 		
 		Random random = new Random();
-	    int randomNumber = random.nextInt(100) + 1;
+	    int randomNumber = random.nextInt(100);
         int maxGuesses = 5;
         int numGuesses = 0;
         
@@ -24,8 +24,7 @@ public class JavaAssignment2 {
 		                continue;
 		            }
 		            
-		            numGuesses++;
-		
+		          
 		            if (guess < randomNumber) {
 		                System.out.println("Please pick a higher number.");
 		            } else if (guess > randomNumber) {
